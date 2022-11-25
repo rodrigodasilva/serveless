@@ -1,0 +1,24 @@
+{
+  "name": "code7-lambda-email-sms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "serverless-offline": "^11.5.0"
+  },
+  "scripts": {
+    "dev": "sls offline",
+    "call-api": "bash requests/call-api.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.5.1",
+    "eslint-plugin-promise": "^6.1.1"
+  }
+}

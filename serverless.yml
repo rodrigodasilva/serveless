@@ -1,0 +1,19 @@
+
+service: code7-lambda-email-sms
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+plugins:
+  - serverless-offline
+
+functions:
+  handle_sqs:
+    handler: src/handlerSQS.handler
+    events:
+      - http:
+          method: post
+          path: handler
+          cors: true
+
